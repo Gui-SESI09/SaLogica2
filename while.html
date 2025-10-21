@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura de Repetição - While</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.html">HOME</a>
+  <section>
+    <h2 id="tituloPagina">Estrutura de Repetição <code>while</code></h2>
+
+    <!-- 1. EXPLICAÇÃO -->
+    <p class="texto">
+      O comando <code>while</code> executa um bloco de código <strong>enquanto</strong> uma condição for verdadeira.
+      É usado quando não sabemos exatamente quantas vezes o código precisa repetir.<br>
+      Quando a condição se torna <code>false</code>, o laço é interrompido.
+    </p>
+
+    <!-- 2. EXEMPLO DE CÓDIGO -->
+    <pre><code class="codeWhile">let contador = 1;
+
+while (contador <= 5) {
+  console.log("Número: " + contador);
+  contador++;
+}
+
+// Saída no console:
+// Número: 1
+// Número: 2
+// Número: 3
+// Número: 4
+// Número: 5
+</code></pre>
+
+    <!-- 3. EXEMPLO PRÁTICO FUNCIONAL -->
+    <div class="texto2" id="while-output">
+      Clique no botão para ver o laço <code>while</code> em ação.
+    </div>
+    <button id="botao" onclick="exibirWhile()">Ver Exemplo Prático</button>
+  </section>
+
+  <script>
+    function exibirWhile() {
+      let contador = 1;
+      let resultado = "Contagem com WHILE:\n\n";
+
+      // Executa enquanto contador for menor ou igual a 5
+      while (contador <= 5) {
+        resultado += `Número: ${contador}\n`;
+        contador++;
+      }
+
+      resultado += "\nFim do laço!";
+
+      // Exibe o resultado na tela
+      document.getElementById("while-output").innerText = resultado;
+    }
+  </script>
+</body>
+</html>
+

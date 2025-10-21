@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arrays</title>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <div id="menuArrays">
+        <div id="tituloPagina">
+            <h1>Arrays</h1>
+        </div>
+        <div class="texto">
+            <p><!-- Explicação do Termo-->
+                Arrays em JavaScript são estruturas de dados que armazenam múltiplos valores em uma única variável, acessados por um índice numérico começando em zero. 
+                Eles são muito úteis para organizar dados, como listas de nomes ou números, e podem armazenar diferentes tipos de dados (strings, números, até mesmo outros arrays). <br>
+                Você pode criar arrays com colchetes [] e usar métodos como push() para adicionar elementos e pop() para remover. 
+            </p>
+        </div>
+
+        <div class="codeArrays">
+        <!-- Exemplo de Código-->
+        <p>Veja um exemplo de código:</p>
+        <img src="./img/arrays01.png" alt="Exemplo Genérico de Código">
+        </div>
+    
+    <!-- Exemplo Prático-->
+     <div class="codeArrays">
+         <p>Este é um exemplo de código prático:</p>
+         <button id="botao" onclick="arrayNotas()">Interagir com exemplo Array</button>
+         <p>Este é o código que foi utilizado no botão:</p>
+        <script>
+            function arrayNotas(){
+                const aluno = ['João', 'Lucas', 'Iago', 'Vinícius']
+                const notas = [8.0, 9.0, 10.0, 9.5, 8.5, 4.5, 2.0]
+                alert("O aluno " + aluno[3] + " tirou nota " + notas[3]);
+            }
+        </script>
+    
+        <img src="./img/arrays02.png" alt="Código Prático de Notas e Alunos"> <!--Arrumar fotos-->
+        <p>Esse array é um exemplo prático muito utilizado em sistemas escolares, onde o array armazena os valores de notas de alunos sem que seja necessário existir diversas variávies para isto.</p>
+     </div>
+</div>
+
+</body>
+</html>

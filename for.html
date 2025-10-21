@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura de Repetição - For</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.html">HOME</a>
+  <section>
+    <h2 id="tituloPagina">Estrutura de Repetição <code>for</code></h2>
+
+    <!-- 1. EXPLICAÇÃO -->
+    <p class="texto">
+      O comando <code>for</code> é usado para repetir um bloco de código um número determinado de vezes.  
+      Ele é dividido em três partes: <strong>inicialização</strong>, <strong>condição</strong> e <strong>incremento</strong>.<br>
+      Quando a condição se torna <code>false</code>, o laço é encerrado.
+    </p>
+
+    <!-- 2. EXEMPLO DE CÓDIGO -->
+    <pre><code class="codeFor">for (let i = 1; i <= 5; i++) {
+  console.log("Número: " + i);
+}
+
+// Saída no console:
+// Número: 1
+// Número: 2
+// Número: 3
+// Número: 4
+// Número: 5
+</code></pre>
+
+    <!-- 3. EXEMPLO PRÁTICO FUNCIONAL -->
+    <div class="texto2" id="for-output">
+      Clique no botão para ver o laço <code>for</code> em ação.
+    </div>
+    <button id="botao" onclick="exibirFor()">Ver Exemplo Prático</button>
+  </section>
+
+  <script>
+    function exibirFor() {
+      let resultado = "Contagem com FOR:\n\n";
+
+      // Estrutura de repetição for
+      for (let i = 1; i <= 5; i++) {
+        resultado += `Número: ${i}\n`;
+      }
+
+      resultado += "\nFim do laço!";
+
+      // Exibe o resultado na tela
+      document.getElementById("for-output").innerText = resultado;
+    }
+  </script>
+</body>
+</html>

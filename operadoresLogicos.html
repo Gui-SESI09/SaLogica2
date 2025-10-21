@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <div id="menuOperadoresLogicos">
+        <div id="tituloPagina">
+            <h1>Operadores Lógicos</h1>
+        </div>
+        <div class="texto">
+            <p> 
+                Operadores lógicos são usados em programação e lógica para combinar expressões e formar condições mais complexas, resultando em um valor booleano (verdadeiro ou falso). <br>
+                Os três principais operadores lógicos são: <br>
+                <ul>
+                    <li> E (AND), que retorna verdadeiro apenas se ambas as condições forem verdadeiras; <br>
+                    <li> OU (OR), que retorna verdadeiro se pelo menos uma das condições for verdadeira; <br>
+                    <li>  NÃO (NOT), que inverte o valor lógico de uma única expressão.  <br><br>
+                    </ul>
+                Para melhor compreensão esses operadores lógicos podem ser substítuidos por algumas operações matemáticas como por exemplo: <br><br>
+                <ul>
+                    <li>Porta E/AND: V e V = V | V e F = F | ou | 1 * 1 = 1 | 1 * 0 = 0 |
+                    <li>Porta OU/OR: V ou F = V | F ou F = F | ou | 1 + 0 = 1 | 0 + 0 = 0 |
+                    <li>Porta NÃO/NOT: NOT V = F | Negação F = V | ou | 1-1 = 0 | 1 - 0 = 1 |
+            </p>
+        </div>
+        
+        <div class="codeLogicos">
+            <!-- Exemplo de Código-->
+            <p>Veja um exemplo de código:</p>
+            <img src="./img/opl01.png" alt="Exemplo Genérico de Código">
+            <p class="texto2">Este código é um exemplo da porta lógica AND funcional.</p>
+            </div>
+        
+        <!-- Exemplo Prático-->
+    <div>
+        <p class="texto">Este é um exemplo de código prático:</p> <br>
+        <button class="codeLogicos" id="botao" onclick="opLogicosAND()">Interagir com Operação Lógica AND</button> 
+        <button class="codeLogicos" id="botao" onclick="opLogicosOR()">Interagir com Operação Lógica OR</button> 
+        <div>
+        <p class="texto2">Estes são os códigos utilizados no botões:</p>
+        <div class="codeLogicos"> </div>
+        <br> <img src="./img/opl02.png" alt="Código da Porta AND"> <br><br>
+        <img src="./img/opl03.png" alt="Código da Porta OR">
+      </div>
+        
+            <script>
+                function opLogicosAND(){
+                    let a = prompt("Digite V ou F para definir se o elemento A é Verdadeiro ou Falso")
+                    let b = prompt("Digite V ou F para definir se o elemento B é Verdadeiro ou Falso")
+                    if(a === "V" && b === "V"){
+                        alert("Sua saída é verdadeira.")
+                    } else{
+                        alert("Sua saída será falsa.")
+                    }
+                }
+
+                function opLogicosOR(){
+                    let a = prompt("Digite V ou F para definir se o elemento A é Verdadeiro ou Falso")
+                    let b = prompt("Digite V ou F para definir se o elemento B é Verdadeiro ou Falso")
+                    if(a === "V" || b === "V"){
+                        alert("Sua saída é verdadeira.")
+                    } else {
+                        alert("Sua saída será falsa.")
+                    }
+                }
+                
+                function opLogicosNOT(){
+                    let a = prompt("Digite V ou F para definir se o elemento A é Verdadeiro ou Falso")
+                    if(a === "V"){
+                        alert("Sua saída é verdadeira.")
+                    } else {
+                        alert("Sua saída será falsa.")
+                    }
+                }
+            </script>
+    </div>
+
+</body>
+
+</html>

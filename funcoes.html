@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Funções em JavaScript</title>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <div id="menuFuncoes">
+        <div id="tituloPagina">
+            <h1>Funções em JavaScript</h1>
+        </div>
+        <div class="texto">
+            <p>
+                Funções são blocos de códigos que recebem uma tarefa específica, e são reutilizáveis ao longo do código.
+                Recebem parâmetros e retornam um valor por meio do comando 'return'.
+            </p>
+        </div>
+        <div class="texto2">
+            <h1>Sintaxe</h1>
+        </div>
+        <div class="texto">
+            <p>
+                Um exemplo da sintaxe de uma função em java script: <br>
+            <code class="codeFuncoes">function calcularArea(base, altura) { <br>
+                    return (base * altura) / 2; <br>
+                } <br>
+                console.log(calcularArea(10, 5)); // O valor no console vai ser 25 <br>
+            </code> </p>
+            <div class="texto" id="funcoes-output">Clique no botão para calcular uma área.</div>
+            <button id="botao" onclick="exibirFuncoes()">Ver Exemplo Prático</button>
+        </div>
+
+        <script>
+        function exibirFuncoes() {
+            function calcularArea(base, altura) {
+              return (base * altura) / 2;
+            }
+            let base = 10, altura = 5;
+            let area = calcularArea(base, altura);
+            document.getElementById("funcoes-output").innerText = 
+              `Base = ${base}, Altura = ${altura}\nÁrea do triângulo = (base * altura) / 2 = ${area}`;
+          }
+        </script>
+    </div>
+</body>
+</html>

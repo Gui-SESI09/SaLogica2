@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Switch Case</title>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <div id="menuSwitchCase">
+            <p>
+<!-- SEÇÃO: Switch/Case -->
+<section id="switch">
+    <h2 id="tituloPagina">Estrutura de Seleção Switch/Case</h2>
+    
+    <!-- 1. EXPLICAÇÃO -->
+    <p class="texto">
+      Útil quando você precisa comparar uma mesma variável com vários valores possíveis.
+      Cada valor é um <code>case</code>, e o <code>break</code> evita que os casos "vazem" para o próximo.
+    </p>
+    
+    <!-- 2. EXEMPLO DE CÓDIGO -->
+    <pre><code class="codeSwitchCase">let mes = 2;
+  switch (mes) {
+    case 1: console.log("Janeiro"); break;
+    case 2: console.log("Fevereiro"); break;
+    case 3: console.log("Março"); break;
+    default: console.log("Mês inválido");
+  }</code></pre>
+    
+    <!-- 3. EXEMPLO PRÁTICO FUNCIONAL -->
+    <div class="texto" id="switch-output">Clique no botão para ver um mês aleatório.</div>
+    <button id="botao" onclick="exibirSwitch()">Ver Exemplo Prático</button>
+  </section>
+  <script>
+      function exibirSwitch() {
+    let mes = Math.floor(Math.random() * 12) + 1; // 1 a 12
+    let nomeMes;
+    switch (mes) {
+      case 1: nomeMes = "Janeiro"; break;
+      case 2: nomeMes = "Fevereiro"; break;
+      case 3: nomeMes = "Março"; break;
+      case 4: nomeMes = "Abril"; break;
+      case 5: nomeMes = "Maio"; break;
+      case 6: nomeMes = "Junho"; break;
+      case 7: nomeMes = "Julho"; break;
+      case 8: nomeMes = "Agosto"; break;
+      case 9: nomeMes = "Setembro"; break;
+      case 10: nomeMes = "Outubro"; break;
+      case 11: nomeMes = "Novembro"; break;
+      case 12: nomeMes = "Dezembro"; break;
+      default: nomeMes = "Inválido";
+    }
+    document.getElementById("switch-output").innerText = 
+      `Mês sorteado: ${mes} → ${nomeMes}`;
+  }
+  </script>
+            </p>
+        </div>
+
+</body>
+</html>

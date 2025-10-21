@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Do While</title>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <div id="menuDoWhile">
+        <div id="tituloPagina">
+            <h1>Do While</h1>
+        </div>
+
+            <p class="texto">
+                Semelhante ao <code>while</code>, mas a condição é verificada <strong>depois</strong> da primeira execução.
+                Isso garante que o bloco seja executado **pelo menos uma vez**.
+            </p>
+            <code class="codeDoWhile">
+                let tentativas = 0; <br>
+                do {<br>
+                    console.log("Tentativa: " + tentativas);<br>
+                    tentativas++;<br>
+                } while (tentativas < 3);
+            </code>
+            <div class="texto2" id="dowhile-output">Clique no botão para ver o loop do...while.</div>
+            <button id="botao" onclick="exibirDoWhile()">Ver Exemplo Prático</button>
+
+        
+        <script>
+            function exibirDoWhile() {
+                let tentativas = 0;
+                let resultado = [];
+                    do {
+                        resultado.push(`Tentativa: ${tentativas}`);
+                        tentativas++;
+                    } while (tentativas < 3);
+                document.getElementById("dowhile-output").innerText = resultado.join("\n");
+            }
+        </script>
+    </div>
+</body>
+</html>

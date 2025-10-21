@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>For Each</title>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <div id="menuForEach">
+        <div id="tituloPagina">
+            <h1>For Each</h1>
+        </div>
+        <div class="texto">
+            <p>
+                Método exclusivo para arrays. Executa uma função para cada elemento, sem precisar de índices.
+                É mais legível e seguro que o <code>for</code> tradicional para iterações simples.
+            </p>
+            <div class="codeForEach">
+            <code>let nomes = ["Ana", "Pedro", "Clara"]; <br>
+            nomes.forEach(nome => { <br>
+              console.log("Olá, " + nome + "!");
+            });
+        </code>
+    </div>
+            <div class="praticaForEach" id="foreach-output">Clique no botão para cumprimentar cada nome.</div>
+            <button id="botao" onclick="exibirForEach()">Ver Exemplo Prático</button>
+
+            <script>
+            function exibirForEach() {
+                let nomes = ["Ana", "Pedro", "Clara"];
+                let resultado = [];
+                nomes.forEach(nome => {
+                    resultado.push(`Olá, ${nome}!`);
+                });
+                document.getElementById("foreach-output").innerText = resultado.join("\n");
+            }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>If Else</title>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <div id="menuIfElse">
+        <div id="tituloPagina">
+            <h1>If Else</h1>
+        </div>
+        <div id="texto">
+            <p>
+
+            </p>
+        <div class="codeArrays">
+        <!-- Exemplo de Código-->
+        <p>Veja um exemplo de código:</p>
+        <button id="botao" onclick="calcularIMC()">Interagir com exemplo IMC</button>
+        <script>
+            function calcularIMC(){
+                let peso = prompt("Quantos kg's você tem?")
+                let altura = prompt("Qual a sua altura em metros")
+                let imc = (peso / (altura * altura))
+                if (imc <= 22){
+                    alert("Você está em baixo peso, seu IMC é de: " + imc)
+                } else if(imc <= 27){
+                    alert("Você está com o peso normal, seu IMC é de: " + imc)
+                } else if(imc <=29.99){
+                    alert("Você está com o sobrepeso, seu IMC é de: " + imc)
+                } else {
+                    alert("Você está com obesidade, seu IMC é de: " + imc)
+                }
+            }
+        </script>
+        <img src="./img/ifelse01.png" alt="Print de Exemplo de Código que calcula o IMC.">
+        <p>Este código serve como calculadora de IMC.</p>
+        </div>
+    
+    <!-- Exemplo Prático-->
+     <div class="codeArrays">
+         <p>Este é um exemplo de código prático:</p>
+         <button id="botao" onclick="ifElse()">Interagir com exemplo If/Else</button>
+         <p>Este é o código que foi utilizado no botão:</p>
+        <script>
+            function ifElse(){
+                nota = prompt("Digite a sua nota da prova!")
+                if(nota >= 8){
+                    alert("Seu conceito é A!")
+                }
+                else if(nota >= 6){
+                    alert("Seu conceito é B!")
+                }
+                else{
+                    alert("Seu conceito foi C")
+                }
+            }
+        </script>
+        
+        <img src="./img/ifElse02.png" alt="Código Prático de Conceitos e Notas de Alunos"> <!--Arrumar fotos-->
+        <p>Esse código serve para exibir o conceito de um aluno a partir de sua nota.</p>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/*
+div{
+    border: 1px solid rgb(255, 0, 0);
+}
+*/
+body{
+        font-family: 'Oswald', system-ui;
+        background-color: black;
+        color: white;
+        border: 30px;
+        border-radius: 30px;
+        background-image: url('./img/fundo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+     }
+
+a{
+    background-color: rgb(174, 187, 187);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+    width: 20%;
+    font-size: 20px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 1px;
+    transition: .5s;
+}
+
+a:hover{
+    background-color: cyan;
+}
+
+#botao{
+    gap: 30px;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#botao:active{
+    background-color: rgb(0, 182, 182);
+    box-shadow: 0 5px rgb(0, 101, 101);
+    transform: translateY(4px);
+  }
+
+  
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 171, 184);
+    transform: translateY(-4px);
+    transition: .5s;
+}
+
+#menuVariaveis{
+    text-align: center;
+    display: flex;
+}
+
+#tituloPagina{
+    text-shadow: 0 -10px 5px rgba(0, 0, 0, 0.233);
+    color: black;
+    background-color:  rgb(174, 187, 187);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#tituloPagina:hover{
+    text-shadow: 0 -10px 5px rgba(0, 0, 0, 0.25);
+    color: black;
+    background-color: cyan;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    transform: translateY(-4px);
+    transition: .5s;
+}
+
+#TituloVariaveis{
+    text-shadow: 0 -10px 5px rgba(0, 0, 0, 0.25);
+    background-color:  rgb(174, 187, 187);
+    border-radius: 100px;
+    color: black;
+    border-color:  rgb(174, 187, 187);
+    width: 30%;
+    font-size: 40px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#TituloVariaveis:hover{
+    background-color: rgba(0, 238, 255, 1);
+    text-decoration: underline;
+}
+
+#textoVariaveis{
+    color: black;
+    background-color: rgb(174, 187, 187);
+    border-radius: 10px;
+    border-color: aqua;
+    font-size: 30px;
+    margin: auto;
+    transition: .5s;
+    width: 70%;
+}
+
+#textoVariaveis:hover{
+    background-color: rgba(0, 238, 255, 1);
+    text-decoration: underline;
+}
+
+
+.texto{
+    color: black;
+    background-color:  rgb(174, 187, 187);
+    border-radius: 10px;
+    border-color:  rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: .5s;
+    
+}
+
+.texto:hover{
+    background-color: cyan;
+    text-decoration: underline;
+    transform: translateY(-4px);
+}
+
+.texto2{
+    color: black;
+    background-color:  rgb(174, 187, 187);
+    border-radius: 10px;
+    border-color: aqua;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    transition: .5s;
+    
+}
+
+.texto2:hover{
+    color: white;
+    background-color: cyan;
+    text-decoration: underline;
+    transform: translateY(-4px);
+}
+
+.codeArrays{
+    color: black;
+    background-color:  rgb(174, 187, 187);
+    border-radius: 10px;
+    border-color:  rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.codeArrays:hover{
+    text-decoration: underline;
+    background-color: cyan;
+}
+
+.codeSwitchCase{
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    border-color: rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.codeSwitchCase:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0);
+}
+
+.codeOpMTM{
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    border-color: rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.codeOpMTM:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0);
+}
+
+.codeFuncoes{
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    border-color: rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.codeFuncoes:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0);
+}
+
+.codeWhile{
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    border-color: rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.codeWhile:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0);
+}
+
+.codeFor{
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    border-color: rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.codeFor:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0);
+}
+
+.codeDoWhile{
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    border-color: rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.codeDoWhile:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0);
+}
+
+.codeLogicos{
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    border-color: rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+    text-align: center;
+}
+
+.codeLogicos:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0);
+}
+
+.codeOpRelacio{
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    border-color: rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+    text-align: center;
+}
+
+.codeOpRelacio:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0);
+}
+
+.codeForEach{
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    border-color: rgb(174, 187, 187);
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+    text-align: center;
+}
+
+.codeForEach:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0);
+}

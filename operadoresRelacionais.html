@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.html">HOME</a>
+  <section>
+    <h2 id="tituloPagina" >Operadores Relacionais</h2>
+    
+    <!-- 1. EXPLICAÇÃO -->
+    <p class="texto">
+      Comparam dois valores e retornam <code>true</code> ou <code>false</code>. Exemplos: igualdade (<code>==</code>), igualdade estrita (<code>===</code>),
+      maior que (<code>></code>), menor que (<code><</code>), diferente (<code>!=</code> ou <code>!==</code>).
+    </p>
+    
+    <!-- 2. EXEMPLO DE CÓDIGO -->
+    <pre><code class="codeOpRelacio">let x = 5;
+  console.log(x > 3);     // true
+  console.log(x === "5"); // false (número ≠ string)
+  console.log(x != 4);    // true</code></pre>
+    
+    <!-- 3. EXEMPLO PRÁTICO FUNCIONAL -->
+    <div class="texto2" id="relacionais-output">
+      Clique no botão para ver comparações.
+    </div>
+    <button id="botao" onclick="exibirOperadoresRelacionais()">Ver Exemplo Prático</button>
+  </section>
+
+
+      <script>
+        // ... outras funções ...
+      
+        function exibirOperadoresRelacionais() {
+          let x = 5;
+          
+          // Faz as comparações
+          let maiorQue3 = x > 3;           // true
+          let igualdadeEstrita = x === "5"; // false (número vs string)
+          let diferenteDe4 = x != 4;       // true
+          
+          // Monta o texto de saída com quebras de linha
+          let resultado = 
+            `Valor de x: ${x}\n\n` +
+            `x > 3 → ${maiorQue3}\n` +
+            `x === "5" → ${igualdadeEstrita} (número ≠ string)\n` +
+            `x != 4 → ${diferenteDe4}`;
+          
+          // Exibe na div de saída
+          document.getElementById("relacionais-output").innerText = resultado;
+        }
+      
+        // ... outras funções ...
+      </script>
+</body>
+</html>
